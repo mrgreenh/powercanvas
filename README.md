@@ -27,8 +27,8 @@ p.shade(); //This is my favourite *_*
 
 Other commands are just one-time actions that don't require additional interactions:
 ```
-p.setBorders(5,"#ff0000") //width and color
-p.addCaption("Any text you want","#0000ff","Ariel") //Content, color, font. You can resize, rotate, add shades and borders to these too!
+p.setBorders(5,"#ff0000"); //width and color
+p.addCaption("Any text you want","#0000ff","Ariel"); //Content, color, font. You can resize, rotate, add shades and borders to these too!
 p.bringFront();
 p.sendBack();
 p.erase();
@@ -36,5 +36,7 @@ p.erase();
 ##Output Example
 When you will be a powercanvas ninja (and a good photographer :P) you will be able to put together things like this:
 ![alt tag](https://raw.github.com/mrgreenh/powercanvas/master/example_result.png)
+
+Enjoy!
 
 [oCanvas]: https://github.com/koggdal/ocanvas

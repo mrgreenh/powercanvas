@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Power Canvas Example</title>
+    <script type="text/javascript" src="js/ocanvas-2.2.2.js"></script>
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="powercanvas.js"></script>
+    <script>
+      $(function(){
+	  add = "example_images/face1.jpg";
+	  add2 = "example_images/face2.jpg";
+	  p = new PowerCanvas("powercanvas");
+	  p.insertImage(add,100,100);
+	  p.insertImage(add2,200,200);
+
+	  $("#move").click(function(){
+	      p.move();
+	  });
+	  $("#rotate").click(function(){
+	      p.rotate();
+	  });
+	  $("#scale").click(function(){
+	      p.scale();
+	  });
+	  $("#shade").click(function(){
+	      p.shade();
+	  });
+	  $("#border").click(function(){
+	      p.setBorders(4,"#ff0000");
+	  });
+	  $("#text").click(function(){
+	      var t = prompt("What do you want to write?");
+	      p.addCaption(t,"#000000","Ariel");
+	  });
+	  $("#front").click(function(){
+	      p.bringFront();
+	  });
+	  $("#back").click(function(){
+	      p.sendBack();
+	  });
+	  $("#erase").click(function(){
+	      p.erase();
+	  });
+      });
+    </script>
+    <style type="text/css">
+      canvas{
+	  border: 1px dashed #999999;
+	  float:left;
+      }
+      ul{
+	  float:left;
+      }
+    </style>
+  </head>
+  
+  <body>
+    
+    <canvas id="powercanvas" width="700" height="600">
+      You don't support canvas elements? Make the world a better place and consider upgrading your browser!!!
+    </canvas>
+
+    <ul>
+      <li>
+	<a href="#" id="move">Move</a>
+      </li>
+      <li>
+	<a href="#" id="rotate">Rotate</a>
+      </li>
+      <li>
+	<a href="#" id="scale">Scale</a>
+      </li>
+      <li>
+	<a href="#" id="shade">Shade</a>
+      </li>
+      <li>
+	<a href="#" id="border">Border</a>
+      </li>
+      <li>
+	<a href="#" id="text">Text</a>
+      </li>
+      <li>
+	<a href="#" id="front">Brint to Front</a>
+      </li>
+      <li>
+	<a href="#" id="back">Send to Back</a>
+      </li>
+      <li>
+	<a href="#" id="erase">Erase</a>
+      </li>
+    </ul>
+  </body>
+</html>

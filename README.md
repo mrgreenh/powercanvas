@@ -1,7 +1,7 @@
 Powercanvas
 ===========
 
-With power canvas you can use a HTML &lt;canvas> element as a board where to place images and text. It lets you add borders, play with shades, scale, rotate, resize, reorder anything you pour in it! I originally wrote this for a school project, but the script works quite well by itself too, so here it is. It used [ocanvas] and jQuery.
+With power canvas you can use a HTML &lt;canvas> element as a board where to place images and text. It lets you add borders, play with shades, scale, rotate, resize, reorder anything you pour in it! I originally wrote this for a school project, but the script works quite well by itself too, so here it is. It uses [oCanvas] and jQuery.
 Feel free to try it out. I included a very simple usage example in the repository, which doesn't let you play too much with text and borders, but it's better than nothing...
 
 ##Usage
@@ -37,4 +37,4 @@ p.erase();
 When you will be a powercanvas ninja (and a good photographer :P) you will be able to put together things like this:
 ![alt tag](https://raw.github.com/mrgreenh/powercanvas/master/example_result.png)
 
-[ocanvas]: https://github.com/koggdal/ocanvas
+[oCanvas]: https://github.com/koggdal/ocanvas
